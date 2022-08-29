@@ -96,7 +96,7 @@ public class PsiTypeUtils {
             if (canonicalText.contains("<")) {
                 canonicalText=canonicalText.substring(0, canonicalText.indexOf("<"));
             }
-            if (canonicalText.contains(s)) {
+            if (canonicalText.startsWith(s)) {
                 return Boolean.TRUE;
             }
         }

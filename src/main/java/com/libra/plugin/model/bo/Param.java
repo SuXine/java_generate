@@ -10,6 +10,13 @@ public class Param {
 
     private String desc;
 
+    private String required;
+
+    /**
+     * 参数位置
+     */
+    private String position;
+
     private final List<Param> children = new ArrayList<>();
 
     public String getName() {
@@ -43,5 +50,21 @@ public class Param {
 
     public void setDesc(String desc) {
         this.desc = desc;
+    }
+
+    public String getRequired() {
+        return required;
+    }
+
+    public void setRequired(String required) {
+        this.required = required;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
     }
 }

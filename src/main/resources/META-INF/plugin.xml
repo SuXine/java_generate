@@ -1,5 +1,5 @@
 <idea-plugin>
-    <version>1.0.4-SNAPSHOT</version>
+    <version>1.0.5-SNAPSHOT</version>
     <change-notes> </change-notes>
 
     <id>com.libra.plugin.JavaGenerate</id>
@@ -41,7 +41,7 @@
    ]]></description>
 
     <change-notes>
-        Remove the restriction on API documents and support the generation of method documents.
+        Modify some questions
     </change-notes>
 
     <depends>com.intellij.modules.platform</depends>
@@ -60,6 +60,11 @@
                 text="GenerateConvertBean" description="GenerateConvertBean">
             <add-to-group group-id="JavaGenerateGroup1" anchor="first"/>
         </action>
+
+<!--        <action id="com.libra.plugin.GenerateSwaggerJson" class="com.libra.plugin.GenerateSwaggerJson"-->
+<!--                text="GenerateSwaggerJson" description="GenerateSwaggerJson">-->
+<!--            <add-to-group group-id="JavaGenerateGroup1" anchor="first"/>-->
+<!--        </action>-->
 
     </actions>
 </idea-plugin>
